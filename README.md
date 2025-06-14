@@ -37,8 +37,5 @@ This is a simple web application that allows users to manage a guest list for an
 
 3. Open the project in your browser
 You can simply open the index.html file:
-
-Double-click index.html, or
-
-Right-click and choose “Open with” > your browser
+Double-click index.html, or Right-click and choose “Open with” > your browser
 
