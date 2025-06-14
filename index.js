@@ -22,22 +22,26 @@ if(guestCount >= maxGuest){
 const li = document.createElement('li');
 li.innerHTML = 
 `<span class="guest-name">${name}</span>
-<button class="toggle-rsvp">Not attending<button/>
+<button class="toggle-rsvp">Attending<button/>
 <button class="remove">Remove<button/>
 <button class="edit">Edit</button>
 `;
 guestList.appendChild(li);
 guestCount++;
 guestInput.value = ""
-//remove button for each guest
+
+//remove function for each guest
  li.querySelector(".remove").addEventListener("click", () => {
     li.remove();
     guestCount--;
   })
+
+  //toggle function
   li.querySelector(".toggle-rsvp").addEventListener("click", (e) => {
     e.target.textContent =
-      e.target.textContent === "Attending" ? "Not Attending" : "Attending";
-    li.classList.toggle("attending");})
+      e.target.textContent === "Attending" ? "Not Attending" : "Attending";})
+
+ //edit function
     li.querySelector(".edit").addEventListener("click", () =>
     {
      const newName = prompt("Update guest name:, name");   
